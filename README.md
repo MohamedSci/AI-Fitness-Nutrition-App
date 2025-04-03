@@ -37,7 +37,7 @@ ai_fitness_nutrition_app/
     * On macOS/Linux: `source venv/bin/activate`
 4.  Install dependencies: `pip install -r requirements.txt`
 5.  Place your ONNX models (`fitness_level_model.onnx`, `training_params_model.onnx`, `dietary_needs_model.onnx`) in the `backend/models` directory.
-6.  Run the backend application: `python app.py`
+6.  Run the backend application from the Project Root: `backend/python app.py`
 
 **Frontend:**
 
