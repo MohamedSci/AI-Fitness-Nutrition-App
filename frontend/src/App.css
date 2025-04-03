@@ -1,0 +1,30 @@
+.App {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 1rem;
+}
+
+.App-main {
+    padding: 2rem;
+}
+
+.App-footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add more styles as needed */
