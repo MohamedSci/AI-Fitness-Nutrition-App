@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/components/FormSteps.css';
+import '../../styles/components/FormSteps.css';
 
 const PersonalInfoStep = ({ userProfile, handleChange }) => {
   return (

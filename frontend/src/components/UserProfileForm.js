@@ -7,7 +7,7 @@ import FitnessMetricsStep from './FormSteps/FitnessMetricsStep.js';
 import GoalsStep from './FormSteps/GoalsStep.js';
 import ReviewStep from './FormSteps/ReviewStep.js';
 import { submitUserProfile } from '../utils/api.js';
-import './styles/components/FormSteps.css';
+import '../styles/components/FormSteps.css';
 
 const UserProfileForm = () => {
   const [step, setStep] = useState(1);

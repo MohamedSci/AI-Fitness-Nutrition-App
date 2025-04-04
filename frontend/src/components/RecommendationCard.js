@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/components/RecommendationCard.css';
+import '../styles/components/RecommendationCard.css';
 
 const RecommendationCard = ({ title, content, type }) => {
   const renderContent = () => {

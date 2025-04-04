@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import RecommendationCard from './RecommendationCard.js';
-import './styles/components/Recommendations.css';
+import "../styles/components/Recommendations.css";
 
 const Recommendations = () => {
   const location = useLocation();

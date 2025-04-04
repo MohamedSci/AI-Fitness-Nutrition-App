@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/components/CharacterGuide.css';
+import '../styles/components/CharacterGuide.css';
 
 const CharacterGuide = ({ step }) => {
   const messages = {
