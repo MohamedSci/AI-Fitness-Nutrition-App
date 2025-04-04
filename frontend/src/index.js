@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App.js';  // Added .js extension
 import './styles/theme.css';
 import './styles/animations.css';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals.js';  // Added .js extension
 
-// Initialize the app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -13,5 +12,4 @@ root.render(
   </React.StrictMode>
 );
 
-// Optional: If you want to measure performance
 reportWebVitals();

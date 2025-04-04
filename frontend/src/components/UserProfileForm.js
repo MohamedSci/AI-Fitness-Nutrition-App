@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import CharacterGuide from './CharacterGuide';
-import ProgressBar from './ProgressBar';
-import PersonalInfoStep from './FormSteps/PersonalInfoStep';
-import FitnessMetricsStep from './FormSteps/FitnessMetricsStep';
-import GoalsStep from './FormSteps/GoalsStep';
-import ReviewStep from './FormSteps/ReviewStep';
-import { submitUserProfile } from '../utils/api';
+import CharacterGuide from './CharacterGuide.js';
+import ProgressBar from './ProgressBar.js';
+import PersonalInfoStep from './FormSteps/PersonalInfoStep.js';
+import FitnessMetricsStep from './FormSteps/FitnessMetricsStep.js';
+import GoalsStep from './FormSteps/GoalsStep.js';
+import ReviewStep from './FormSteps/ReviewStep.js';
+import { submitUserProfile } from '../utils/api.js';
 import './styles/components/FormSteps.css';
 
 const UserProfileForm = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import UserProfileForm from './components/UserProfileForm';
-import Recommendations from './components/Recommendations';
+import UserProfileForm from './components/UserProfileForm.js';
+import Recommendations from './components/Recommendations.js';
 import './styles/theme.css';
 import './styles/animations.css';
 
