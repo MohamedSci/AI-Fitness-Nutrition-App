@@ -1,0 +1,93 @@
+.character-guide {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .character-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .character-face {
+    width: 60%;
+    height: 60%;
+    position: relative;
+  }
+  
+  .character-eyes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+  }
+  
+  .character-eye {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blink 5s infinite;
+  }
+  
+  .character-mouth {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 15px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .character-message {
+    background-color: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .character-message::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+  }
+  
+  /* Step-specific character states */
+  .character-guide.step-1 .character-avatar {
+    background-color: #4a6fa5;
+  }
+  
+  .character-guide.step-2 .character-avatar {
+    background-color: #166088;
+  }
+  
+  .character-guide.step-3 .character-avatar {
+    background-color: #4fc3f7;
+  }
+  
+  .character-guide.step-4 .character-avatar {
+    background-color: #28a745;
+  }

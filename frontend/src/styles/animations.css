@@ -1,0 +1,109 @@
+/* Character animations */
+.character-guide {
+    transition: all 0.5s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .character-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    animation: bounce 2s infinite;
+  }
+  
+  .character-face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+  }
+  
+  .character-eyes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+  }
+  
+  .character-eye {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blink 4s infinite;
+  }
+  
+  .character-mouth {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .character-guide:hover .character-mouth {
+    height: 15px;
+    border-radius: 10px;
+  }
+  
+  .character-message {
+    background-color: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+  }
+  
+  .character-message::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes blink {
+    0%, 45%, 55%, 100% { height: 15px; }
+    50% { height: 2px; }
+  }
+  
+  /* Form step transitions */
+  .form-step {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.5s ease;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .form-step.active {
+    opacity: 1;
+    transform: translateX(0);
+    height: auto;
+  }
+  
+  /* Progress bar animation */
+  .progress-bar {
+    transition: width 0.5s ease;
+  }

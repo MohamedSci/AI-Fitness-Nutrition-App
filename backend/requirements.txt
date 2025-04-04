@@ -1,0 +1,6 @@
+Flask
+Flask-CORS
+pandas
+numpy
+onnxruntime
+gunicorn  # For production deployment
